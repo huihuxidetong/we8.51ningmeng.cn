@@ -1,0 +1,146 @@
+<!--pages/pond/pond.wxml-->
+		<view class="bg">
+			<view class="pond-head">
+				<image src="{{__wxapp_img.pond.pond.pond_head.url}}" class="pond-bg" />
+				<navigator hover-class="navigator-hover" url="/pond/rule/rule" >
+					<view class="pond-gze">规则</view>
+				</navigator>
+                <view onTap="showShareModal" class="pond-gze" style="top:104rpx">分享</view>
+			</view>
+			<view class="pond-cj">
+				<view class="pond-text">您还有<text class="pond-num">{{oppty}}</text>次抽奖机会</view> 
+			</view>
+			<view class="container-out">
+				<view 
+				class="circle" a:for="{{circleList}}"  
+				style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};">
+			</view>
+			<view class="container-in">
+				<view class="content-out" a:for="{{awardList}}" style="top:{{item.topAward}}rpx;left:{{item.leftAward}}rpx;background-color: {{(index==indexSelect)?colorAwardSelect:colorAwardDefault}};">
+					<image src="{{item.image_url}}" mode="aspectFit" class="pond-name-img"/>
+					<view class="pond-name">{{item.name}}</view>
+				</view>
+				<view class="start-btn" onTap="startGame" >
+				    <image src="/pond/images/pond-button.png" style="height:160rpx;width:100%;"/>
+
+                    <block a:if="{{register>0}}" >
+
+                        <view animation="{{animationData}}" style="display:inline;position:absolute;left:10rpx;height:136rpx;width:178rpx;">
+                            <image src="/pond/images/pond-register.png"  style="height:136rpx;width:178rpx;"/>                  
+                        </view>
+
+                        <view class="flex-x-center">
+                            <view animation="{{animationData}}" class="pond-register">-{{register}}积分</view>
+                        </view><!-- margin-top:{{animate}}rpx-->
+                    </block>
+                    <image a:else src="/pond/images/pond-cj.png" animation="{{animationData}}" style="position:absolute;left:10rpx;height:136rpx;width:178rpx;"/>
+				</view>
+			</view>
+		</view>
+        <navigator open-type="redirect" hover-class="navigator-hover" url="/pages/index/index" style="display:inline;padding-right:150rpx" >
+            <image style="height:30rpx;width:30rpx;margin-right:14rpx;margin-bottom:-1rpx" src="/pond/images/home.png"></image>
+            <view class="pond-bottom">回到首页</view>
+        </navigator>
+		<navigator hover-class="navigator-hover" url="/pond/prize/prize" style="display:inline">
+			<view class="pond-bottom">中奖记录</view>
+            <image class="pond-jt" src="/pond/images/pond-jt.png"></image>
+		</navigator>
+		</view>    
+
+        <!-- 活动弹窗 -->
+        <view a:if="{{prize==2}}">
+        	<view class="act-modal">
+        		<view class="act-modal-bg" onTap="closeActModal"></view>
+        		<view class="act-modal-pic flex-y-center flex-x-center">
+        			<view style="text-align:center;position:relative">
+        				<image src="{{__wxapp_img.pond.pond.pond_success.url}}" style="height:462rpx;width:750rpx"/>
+        				<image onTap="pondClose" style="position:absolute;right:80rpx;top:0;z-index:555;width:50rpx;height:50rpx" src="/pond/images/pond-close.png"></image>
+        				<view class="act-modal-close flex-x-center" style="">
+        					<view class="pond-xxcy" style="margin-top:-14rpx;padding-bottom:12rpx">恭喜</view>
+        				</view>
+        				<view class="act-modal-close flex-x-center">
+        					<view class="pond-ok">抽中{{name}}</view>
+        				</view>
+        				<view class="act-modal-close flex-x-center" >
+        					<view style="width:591rpx;background:#ffffff;border-radius:0 0 24rpx 24rpx">
+        						<view class="pond-bottom pond-bottom-2" onTap="pondClose" >继续抽奖</view>
+        					</view>
+        				</view>
+        			</view>
+        		</view>
+        	</view>
+        </view>
+
+
+        <view a:if="{{prize==1}}">
+        	<view class="act-modal">
+        		<view class="act-modal-bg" onTap="closeActModal"></view>
+        		<view class="act-modal-pic flex-y-center flex-x-center">
+        			<view style="text-align:center;position:relative">
+        				<image src="{{__wxapp_img.pond.pond.pond_empty.url}}" style="height:240rpx;width:750rpx"/>
+        				<image onTap="pondClose" style="position:absolute;right:80rpx;top:0;z-index:555;width:50rpx;height:50rpx" src="/pond/images/pond-close.png"></image>
+        				<view class="act-modal-close flex-x-center" style="">
+        					<view class="pond-xxcy" style="margin-top:-14rpx;padding-bottom:12rpx">谢谢参与</view>
+        				</view>
+        				<view class="act-modal-close flex-x-center">
+        					<view class="pond-xxcy" style="margin-top:-10rpx">再换个姿势抽奖</view>
+        				</view>
+        				<view class="act-modal-close flex-x-center" >
+        					<view style="width:591rpx;background:#ffffff;border-radius:0 0 24rpx 24rpx">
+        						<view onTap="pondClose" class="pond-bottom pond-bottom-2">继续抽奖</view>
+        					</view>
+        				</view>
+        			</view>
+        		</view>
+        	</view>
+        </view>
+
+        <view class="goods-qrcode-modal {{qrcode_active}}">
+            <view class="goods-qrcode-body flex-col">
+                <view class="flex-grow-1" style="position: relative">
+                    <view style="position: absolute;left: 0;top:0;width: 100%;height: 100%;padding: 100rpx 100rpx 60rpx">
+                        <view class="goods-qrcode-box">
+                            <view class="goods-qrcode-loading flex-x-center flex-y-center">
+                                <view class="flex-x-center flex-col">
+                                    <image style="width: 150rpx;height: 150rpx" src="{{__wxapp_img.system.loading2.url}}"></image>
+                                    <view style="color: #888">海报生成中</view>
+                                </view>
+                            </view>
+                            <image onTap="qrcodeClick" mode="widthFix" class="goods-qrcode {{goods_qrcode?'active':''}}" data-src="{{goods_qrcode}}" src="{{goods_qrcode}}"></image>
+                        </view>
+                    </view>
+                </view>
+                <view class="flex-grow-0 flex-col flex-x-center" style="padding: 0 60rpx 80rpx">
+                    <view style="margin-bottom: 20rpx;padding: 0 40rpx">
+                        <button a:if="{{goods_qrcode}}" onTap="saveQrcode" style="background: #ff4544;color: #fff;">
+                            保存图片
+                        </button>
+                        <button a:else style="opacity: .4">保存图片</button>
+                    </view>
+                    <view style="color: #888;font-size: 9pt;text-align: center">保存至相册可以分享给朋友</view>
+                </view>
+                <view class="goods-qrcode-close" onTap="qrcodeClose">
+                    <image src="{{__wxapp_img.store.close2.url}}" style="width: 50rpx;height: 50rpx;display: block"></image>
+                </view>
+            </view>
+        </view>
+        
+        <view class="share-modal {{share_modal_active}}">
+            <view class="share-modal-body">
+                <view class="flex-row">
+                    <view class="flex-grow-1 flex-x-center">
+                        <button open-type="share" class="share-bottom" style="height:100%">
+                            <image src="{{__wxapp_img.share.friend.url}}"></image>
+                            <view>分享给朋友</view>
+                        </button>
+                    </view>
+                    <view class="flex-grow-1 flex-x-center">
+                        <view onTap="getGoodsQrcode" class="share-bottom">
+                            <image src="{{__wxapp_img.share.qrcode.url}}"></image>
+                            <view>生成商品海报</view>
+                        </view>
+                    </view>
+                </view>
+                <view onTap="shareModalClose" class="share-modal-close flex-y-center flex-x-center">关闭</view>
+            </view>
+        </view>

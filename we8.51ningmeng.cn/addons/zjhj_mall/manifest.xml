@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://ym.zuka8.com" versionCode="0.8,1.0">
+	<application setting="false">
+		<name><![CDATA[小程序商城]]></name>
+		<identifie><![CDATA[zjhj_mall]]></identifie>
+		<version><![CDATA[2.9.30]]></version>
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[小程序商城+三级分销]]></ability>
+		<description><![CDATA[小程序商城+三级分销]]></description>
+		<author><![CDATA[林心网络]]></author>
+		<url><![CDATA[http://ym.zuka8.com/]]></url>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+		<supports>
+			<item type="wxapp" />
+			<item type="app" />
+		</supports>
+	</platform>
+	<bindings>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[shuotupu.php]]></install>
+	<uninstall><![CDATA[DROP TABLE IF EXISTS `hjmall_action_log`;
+DROP TABLE IF EXISTS `hjmall_address`;
+DROP TABLE IF EXISTS `hjmall_admin`;
+DROP TABLE IF EXISTS `hjmall_admin_permission`;
+DROP TABLE IF EXISTS `hjmall_admin_register`;
+DROP TABLE IF EXISTS `hjmall_article`;
+DROP TABLE IF EXISTS `hjmall_attr`;
+DROP TABLE IF EXISTS `hjmall_attr_group`;
+DROP TABLE IF EXISTS `hjmall_auth_role`;
+DROP TABLE IF EXISTS `hjmall_auth_role_permission`;
+DROP TABLE IF EXISTS `hjmall_auth_role_user`;
+DROP TABLE IF EXISTS `hjmall_banner`;
+DROP TABLE IF EXISTS `hjmall_bargain_goods`;
+DROP TABLE IF EXISTS `hjmall_bargain_order`;
+DROP TABLE IF EXISTS `hjmall_bargain_setting`;
+DROP TABLE IF EXISTS `hjmall_bargain_user_order`;
+DROP TABLE IF EXISTS `hjmall_card`;
+DROP TABLE IF EXISTS `hjmall_cart`;
+DROP TABLE IF EXISTS `hjmall_cash`;
+DROP TABLE IF EXISTS `hjmall_cat`;
+DROP TABLE IF EXISTS `hjmall_color`;
+DROP TABLE IF EXISTS `hjmall_coupon`;
+DROP TABLE IF EXISTS `hjmall_coupon_auto_send`;
+DROP TABLE IF EXISTS `hjmall_delivery`;
+DROP TABLE IF EXISTS `hjmall_district`;
+DROP TABLE IF EXISTS `hjmall_express`;
+DROP TABLE IF EXISTS `hjmall_favorite`;
+DROP TABLE IF EXISTS `hjmall_file_group`;
+DROP TABLE IF EXISTS `hjmall_form`;
+DROP TABLE IF EXISTS `hjmall_form_id`;
+DROP TABLE IF EXISTS `hjmall_free_delivery_rules`;
+DROP TABLE IF EXISTS `hjmall_fxhb_hongbao`;
+DROP TABLE IF EXISTS `hjmall_fxhb_setting`;
+DROP TABLE IF EXISTS `hjmall_goods`;
+DROP TABLE IF EXISTS `hjmall_goods_card`;
+DROP TABLE IF EXISTS `hjmall_goods_cat`;
+DROP TABLE IF EXISTS `hjmall_goods_pic`;
+DROP TABLE IF EXISTS `hjmall_goods_share`;
+DROP TABLE IF EXISTS `hjmall_home_block`;
+DROP TABLE IF EXISTS `hjmall_home_nav`;
+DROP TABLE IF EXISTS `hjmall_in_order_comment`;
+DROP TABLE IF EXISTS `hjmall_integral_cat`;
+DROP TABLE IF EXISTS `hjmall_integral_coupon_order`;
+DROP TABLE IF EXISTS `hjmall_integral_goods`;
+DROP TABLE IF EXISTS `hjmall_integral_log`;
+DROP TABLE IF EXISTS `hjmall_integral_order`;
+DROP TABLE IF EXISTS `hjmall_integral_order_detail`;
+DROP TABLE IF EXISTS `hjmall_integral_setting`;
+DROP TABLE IF EXISTS `hjmall_level`;
+DROP TABLE IF EXISTS `hjmall_level_order`;
+DROP TABLE IF EXISTS `hjmall_lottery_goods`;
+DROP TABLE IF EXISTS `hjmall_lottery_log`;
+DROP TABLE IF EXISTS `hjmall_lottery_reserve`;
+DROP TABLE IF EXISTS `hjmall_lottery_setting`;
+DROP TABLE IF EXISTS `hjmall_mail_setting`;
+DROP TABLE IF EXISTS `hjmall_mch`;
+DROP TABLE IF EXISTS `hjmall_mch_account_log`;
+DROP TABLE IF EXISTS `hjmall_mch_cash`;
+DROP TABLE IF EXISTS `hjmall_mch_cat`;
+DROP TABLE IF EXISTS `hjmall_mch_common_cat`;
+DROP TABLE IF EXISTS `hjmall_mch_goods_cat`;
+DROP TABLE IF EXISTS `hjmall_mch_option`;
+DROP TABLE IF EXISTS `hjmall_mch_plugin`;
+DROP TABLE IF EXISTS `hjmall_mch_postage_rules`;
+DROP TABLE IF EXISTS `hjmall_mch_setting`;
+DROP TABLE IF EXISTS `hjmall_mch_visit_log`;
+DROP TABLE IF EXISTS `hjmall_miaosha`;
+DROP TABLE IF EXISTS `hjmall_miaosha_goods`;
+DROP TABLE IF EXISTS `hjmall_ms_goods`;
+DROP TABLE IF EXISTS `hjmall_ms_goods_pic`;
+DROP TABLE IF EXISTS `hjmall_ms_order`;
+DROP TABLE IF EXISTS `hjmall_ms_order_comment`;
+DROP TABLE IF EXISTS `hjmall_ms_order_refund`;
+DROP TABLE IF EXISTS `hjmall_ms_setting`;
+DROP TABLE IF EXISTS `hjmall_option`;
+DROP TABLE IF EXISTS `hjmall_order`;
+DROP TABLE IF EXISTS `hjmall_order_comment`;
+DROP TABLE IF EXISTS `hjmall_order_detail`;
+DROP TABLE IF EXISTS `hjmall_order_express`;
+DROP TABLE IF EXISTS `hjmall_order_form`;
+DROP TABLE IF EXISTS `hjmall_order_message`;
+DROP TABLE IF EXISTS `hjmall_order_refund`;
+DROP TABLE IF EXISTS `hjmall_order_share`;
+DROP TABLE IF EXISTS `hjmall_order_union`;
+DROP TABLE IF EXISTS `hjmall_plugin`;
+DROP TABLE IF EXISTS `hjmall_pond`;
+DROP TABLE IF EXISTS `hjmall_pond_log`;
+DROP TABLE IF EXISTS `hjmall_pond_setting`;
+DROP TABLE IF EXISTS `hjmall_postage_rules`;
+DROP TABLE IF EXISTS `hjmall_printer`;
+DROP TABLE IF EXISTS `hjmall_printer_setting`;
+DROP TABLE IF EXISTS `hjmall_pt_cat`;
+DROP TABLE IF EXISTS `hjmall_pt_goods`;
+DROP TABLE IF EXISTS `hjmall_pt_goods_detail`;
+DROP TABLE IF EXISTS `hjmall_pt_goods_pic`;
+DROP TABLE IF EXISTS `hjmall_pt_order`;
+DROP TABLE IF EXISTS `hjmall_pt_order_comment`;
+DROP TABLE IF EXISTS `hjmall_pt_order_detail`;
+DROP TABLE IF EXISTS `hjmall_pt_order_refund`;
+DROP TABLE IF EXISTS `hjmall_pt_robot`;
+DROP TABLE IF EXISTS `hjmall_pt_setting`;
+DROP TABLE IF EXISTS `hjmall_qrcode`;
+DROP TABLE IF EXISTS `hjmall_re_order`;
+DROP TABLE IF EXISTS `hjmall_recharge`;
+DROP TABLE IF EXISTS `hjmall_refund_address`;
+DROP TABLE IF EXISTS `hjmall_register`;
+DROP TABLE IF EXISTS `hjmall_scratch`;
+DROP TABLE IF EXISTS `hjmall_scratch_log`;
+DROP TABLE IF EXISTS `hjmall_scratch_setting`;
+DROP TABLE IF EXISTS `hjmall_sender`;
+DROP TABLE IF EXISTS `hjmall_session`;
+DROP TABLE IF EXISTS `hjmall_setting`;
+DROP TABLE IF EXISTS `hjmall_share`;
+DROP TABLE IF EXISTS `hjmall_shop`;
+DROP TABLE IF EXISTS `hjmall_shop_pic`;
+DROP TABLE IF EXISTS `hjmall_sms_record`;
+DROP TABLE IF EXISTS `hjmall_sms_setting`;
+DROP TABLE IF EXISTS `hjmall_store`;
+DROP TABLE IF EXISTS `hjmall_template_msg`;
+DROP TABLE IF EXISTS `hjmall_territorial_limitation`;
+DROP TABLE IF EXISTS `hjmall_topic`;
+DROP TABLE IF EXISTS `hjmall_topic_favorite`;
+DROP TABLE IF EXISTS `hjmall_topic_type`;
+DROP TABLE IF EXISTS `hjmall_upload_config`;
+DROP TABLE IF EXISTS `hjmall_upload_file`;
+DROP TABLE IF EXISTS `hjmall_user`;
+DROP TABLE IF EXISTS `hjmall_user_account_log`;
+DROP TABLE IF EXISTS `hjmall_user_auth_login`;
+DROP TABLE IF EXISTS `hjmall_user_card`;
+DROP TABLE IF EXISTS `hjmall_user_coupon`;
+DROP TABLE IF EXISTS `hjmall_user_form_id`;
+DROP TABLE IF EXISTS `hjmall_user_log`;
+DROP TABLE IF EXISTS `hjmall_user_share_money`;
+DROP TABLE IF EXISTS `hjmall_video`;
+DROP TABLE IF EXISTS `hjmall_we7_user_auth`;
+DROP TABLE IF EXISTS `hjmall_wechat_app`;
+DROP TABLE IF EXISTS `hjmall_wechat_platform`;
+DROP TABLE IF EXISTS `hjmall_wechat_template_message`;
+DROP TABLE IF EXISTS `hjmall_wx_title`;
+DROP TABLE IF EXISTS `hjmall_yy_cat`;
+DROP TABLE IF EXISTS `hjmall_yy_form`;
+DROP TABLE IF EXISTS `hjmall_yy_form_id`;
+DROP TABLE IF EXISTS `hjmall_yy_goods`;
+DROP TABLE IF EXISTS `hjmall_yy_goods_pic`;
+DROP TABLE IF EXISTS `hjmall_yy_order`;
+DROP TABLE IF EXISTS `hjmall_yy_order_comment`;
+DROP TABLE IF EXISTS `hjmall_yy_order_form`;
+DROP TABLE IF EXISTS `hjmall_yy_setting`;
+]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+
+</manifest>

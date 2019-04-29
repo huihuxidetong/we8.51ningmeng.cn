@@ -1,0 +1,3 @@
+<view class="i-qrcode flex-row">
+  <image class="img" src="{{qrcode}}" onTap="click"></image>
+</view>

@@ -1,0 +1,123 @@
+<form report-submit='true' onSubmit="formSubmit">
+  <view class="block">
+    <view class="user-money">账户剩余金额：{{price}}元</view>
+    <view a:if="{{cash_max_day!=-1}}" class="flex-row cash-max-day">
+      <view class="flex-y-center">今日剩余提现金额{{cash_max_day}}元</view>
+      <view class="cash-max-detail" onTap="showCashMaxDetail">详情</view>
+    </view>
+  </view>
+  <view class="flex-row block">
+    <view class="flex-grow-0 flex-y-center cash-cny">￥</view>
+    <view class="flex-grow-1 flex-y-center">
+      <input type="digit" name="cash" class="cash-input" placeholder="输入{{custom.words.cash_money.name}}" placeholder-style="color:#bbb;font-size:13pt" />
+    </view>
+  </view>
+  <view class="block" style="background: none;border: none">
+    <view class="cash-min">{{custom.words.cash_money.name}}不能小于{{share_setting.min_money}}元</view>
+  </view>
+
+  <view class='block'>
+    <view class='pay-title'>{{custom.words.cash_type.name}}</view>
+        <view class='withdraw_type'>
+
+            <block a:if="{{__platform == 'wx'}}">
+            <view class='tixian' onTap='select' data-index='0' a:if='{{pay_type==2 || pay_type==0}}'>
+                <view class='pay flex-row {{selected==0?"active":""}}'>
+                <view class='flex-grow-0'>
+                    <image src='{{__wxapp_img.share.wechat.url}}' class='pay-img'></image>
+                </view>
+                <view class='flex-grow-0'>微信</view>
+                <image src='{{__wxapp_img.share.selected.url}}' class='selected' a:if='{{selected==0}}'></image>
+                </view>
+            </view>
+            </block>
+
+            <view class='tixian' onTap='select' data-index='1' a:if='{{pay_type==2 || pay_type==1}}'>
+                <view class='pay flex-row  {{selected==1?"active":""}}'>
+                <view class='flex-grow-0'>
+                    <image src='{{__wxapp_img.share.ant.url}}' class='pay-img'></image>
+                </view>
+                <view class='flex-grow-0'>支付宝</view>
+                <image src='{{__wxapp_img.share.selected.url}}' class='selected' a:if='{{selected==1}}'></image>
+                </view>
+            </view>
+
+            <view class='tixian' onTap='select' data-index='2' a:if='{{bank==1}}'>
+                <view class='pay flex-row  {{selected==2?"active":""}}'>
+                <view class='flex-grow-0'>
+                    <image src='{{__wxapp_img.share.bank.url}}' class='pay-img'></image>
+                </view>
+                <view class='flex-grow-0'>银行卡</view>
+                <image src='{{__wxapp_img.share.selected.url}}' class='selected' a:if='{{selected==2}}'></image>
+                </view>
+            </view>
+
+            <view class='tixian' onTap='select' data-index='3' a:if='{{remaining_sum==1}}'>
+                <view class='pay flex-row  {{selected==3?"active":""}}'>
+                <view class='flex-grow-0'>
+                    <image src='{{__wxapp_img.store.gold.url}}' class='pay-img'></image>
+                </view>
+                <view class='flex-grow-0'>余额</view>
+                <image src='{{__wxapp_img.share.selected.url}}' class='selected' a:if='{{selected==3}}'></image>
+                </view>
+            </view>
+
+        </view>
+
+  </view>
+
+<block a:if="{{selected == 0}}"> 
+    <view class='block flex-row' style='margin-top:20rpx'>
+      <view class='flex-grow-0 flex-y-center required'>姓名</view>
+      <view class='flex-grow-1 flex-y-center'>
+        <input class='cash-input' placeholder='请输入正确的姓名' placeholder-style='color:#ccc;font-size:13pt' name="name" value='{{name}}'></input>
+      </view>
+    </view> 
+    <view class='block flex-row' style='margin-top:20rpx'>
+      <view class='flex-grow-0 flex-y-center required'>账号</view>
+      <view class='flex-grow-1 flex-y-center'>
+        <input class='cash-input' placeholder='请输入正确微信账号' placeholder-style='color:#ccc;font-size:13pt' name="mobile" value='{{mobile}}'></input>
+      </view>
+    </view>      
+</block>
+
+<block a:elif="{{selected == 1}}">
+    <view class='block flex-row' style='margin-top:20rpx'>
+      <view class='flex-grow-0 flex-y-center required'>姓名</view>
+      <view class='flex-grow-1 flex-y-center'>
+        <input class='cash-input' placeholder='请输入正确的姓名' placeholder-style='color:#ccc;font-size:13pt' name="name" value='{{name}}'></input>
+      </view>
+    </view> 
+    <view class='block flex-row' style='margin-top:20rpx'>
+      <view class='flex-grow-0 flex-y-center required'>账号</view>
+      <view class='flex-grow-1 flex-y-center'>
+        <input class='cash-input' placeholder='请输入正确支付宝账号' placeholder-style='color:#ccc;font-size:13pt' name="mobile" value='{{mobile}}'></input>
+      </view>
+    </view>  
+</block>
+
+<block a:elif="{{selected == 2}}">
+    <view class='block flex-row' style='margin-top:20rpx'>
+      <view class='flex-grow-0 flex-y-center required'>开户人</view>
+      <view class='flex-grow-1 flex-y-center'>
+        <input class='cash-input' placeholder='请输入正确的姓名' placeholder-style='color:#ccc;font-size:13pt' name="name" value='{{name}}'></input>
+      </view>
+    </view> 
+    <view class='block flex-row' style='margin-top:20rpx'>
+      <view class='flex-grow-0 flex-y-center required'>开户行</view>
+      <view class='flex-grow-1 flex-y-center'>
+        <input class='cash-input' placeholder='请输入正确的银行名称' placeholder-style='color:#ccc;font-size:13pt' name="bank_name" value='{{bank_name}}'></input>
+      </view>
+    </view> 
+    <view class='block flex-row' style='margin-top:20rpx'>
+      <view class='flex-grow-0 flex-y-center required'>账号</view>
+      <view class='flex-grow-1 flex-y-center'>
+        <input class='cash-input' placeholder='请输入正确银行卡账号' placeholder-style='color:#ccc;font-size:13pt' name="mobile" value='{{mobile}}'></input>
+      </view>
+    </view>  
+</block>
+
+  <view class="block" style="background: none;border: none;margin-top:68rpx;">
+    <button class="cash-btn" formType="submit">提交申请</button>
+  </view>
+</form>

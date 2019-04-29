@@ -1,0 +1,425 @@
+<!--goods.wxml-->
+<view class="{{(show_attr_picker||show||no_scroll)?'no-scroll':''}}">
+    <view class="attr-picker" a:if="{{show_attr_picker}}">
+        <view class="content-box">
+            <view class="flex-row" style="border-bottom: 1rpx solid #e3e3e3;padding: 24rpx 28rpx">
+                <view class="flex-grow-0">
+                    <view class="goods-pic-box">
+                        <block a:if="{{goods.attr_pic}}">
+                            <image onTap="goodsQrcodeClick" data-src='{{goods.attr_pic}}' mode="aspectFill" src="{{goods.attr_pic}}"></image>
+                        </block>
+                        <block a:else>
+                            <image onTap="goodsQrcodeClick" data-src='{{goods.pic_list[0].pic_url}}' mode="aspectFill" src="{{goods.pic_list[0].pic_url}}"></image>
+                        </block>
+                    </view>
+                </view>
+                <view class="flex-grow-1" style="padding: 0 24rpx">
+
+                    <block a:if="{{miaosha_data && miaosha_data.rest_num>0}}">
+                        <view style="margin-bottom: 12rpx;">
+                            <view>
+                                <text style="color:#ff4544;font-weight: bold">￥{{miaosha_data.miaosha_price}}</text>
+                                <text style="color:#888;text-decoration: line-through;font-size: 9pt;margin-left: 8rpx">￥{{goods.price}}</text>
+                            </view>
+                        </view>
+                    </block>
+                    <block a:else>
+                        <view style="color:#ff4544;margin-bottom: 12rpx;font-weight: bold">￥{{goods.price}}</view>
+                    </block>
+                    <view style="font-size:9pt">
+                        <block a:if="{{miaosha_data && miaosha_data.rest_num>0}}">库存{{miaosha_data.rest_num}}件
+                        </block>
+                        <block a:else>库存{{goods.num}}件</block>
+                    </view>
+                </view>
+                <view class="flex-grow-0">
+                    <view onTap="hideAttrPicker" class="flex-x-center flex-y-center" style="width: 100rpx;height: 100rpx">
+                        <image style="width: 30rpx;height: 30rpx" src="{{__wxapp_img.store.close.url}}" />
+                    </view>
+                </view>
+            </view>
+            <scroll-view scroll-y="true" style="max-height: 650rpx;">
+                <view style="padding: 24rpx 28rpx">
+                    <view>
+                        <view class="attr-group" a:for="{{attr_group_list}}" a:for-item="attr_group" a:key="{{attr_group.id}}" a:if="{{attr_group.attr_list.length>0}}">
+                            <view class="attr-group-name">{{attr_group.attr_group_name}}</view>
+                            <view class="attr-list">
+                                <text class="attr-item {{item.checked?'active':''}}" a:for="{{attr_group.attr_list}}" a:key="{{item.id}}" data-group-id="{{attr_group.attr_group_id}}" data-id="{{item.attr_id}}" onTap="attrGoodsClick">{{item.attr_name}}
+                                </text>
+                            </view>
+                        </view>
+                    </view>
+                    <view style="height: 0;border-bottom: 1rpx solid #e3e3e3;margin-bottom: 40rpx"></view>
+                    <view style="padding-bottom: 40rpx">
+                        <view class="flex-row flex-y-center mb-20">
+                            <view class="flex-grow-1">数量</view>
+                            <view class="flex-grow-0">
+
+                                <view class="flex-row number-input-box">
+                                    <view style='margin-right:0.01rem;' class="flex-grow-0 flex-x-center flex-y-center number-btn number-sub {{form.number<=1?'disabled':''}}" onTap="numberSub">-
+                                    </view>
+                                    <view class="flex-grow-0">
+                                        <input style='padding:0' class="flex-grow-1 number-input" value="{{form.number}}" type="number" step="1" min="1" onBlur="numberBlur" />
+                                    </view>
+                                    <view class="flex-grow-0 flex-x-center flex-y-center number-btn number-add" onTap="numberAdd">+
+                                    </view>
+                                </view>
+
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+    <view style="padding-bottom: 120rpx">
+        <swiper class="goods-image-swiper" autoplay="{{autoplay}}" interval="5000" duration="300" indicator-dots="true" circular="true" onChange="hide">
+            <block a:for="{{goods.pic_list}}" a:key="{{item.id}}">
+                <swiper-item>
+                    <block a:if="{{goods.video_url}}">
+                        <!-- <view style='width:750rpx;height:700rpx;position:absolute;top:0;left:0;'> -->
+                        <image class="play {{img_hide}}" src="{{__wxapp_img.store.video_play.url}}" data-url="{{goods.video_url}}" onTap="play"></image>
+                        <!-- </view> -->
+                    </block>
+                    <image onTap="onGoodsImageClick" data-index="{{index}}" class="goods-image" src="{{item.pic_url}}" mode="aspectFill" />
+                </swiper-item>
+            </block>
+        </swiper>
+
+        <view a:if="{{goods&&goods.miaosha}}" class="miaosha-bar flex-row">
+            <view class="flex-grow-1 flex-row miaosha-bar-left">
+                <view class="flex-grow-0 flex-y-center">
+                    <view class="flex-y-bottom miaosha-price">
+                        <text class="cny">￥</text>
+                        <text>{{goods.miaosha.miaosha_price}}</text>
+                    </view>
+                </view>
+                <view class="flex-grow-1 flex-y-center">
+                    <view>
+                        <view class="goods-price">￥{{goods.price}}</view>
+                        <view class="sell-num">已抢{{goods.miaosha.sell_num}}件</view>
+                    </view>
+                </view>
+            </view>
+            <view class="flex-grow-0 flex-y-center miaosha-bar-right">
+                <view>
+                    <view class="time-over-text">距离结束仅剩</view>
+                    <view class="timer">
+                        <text class="timer-num">{{miaosha_end_time_over.h}}</text>
+                        <text class="timer-split">:</text>
+                        <text class="timer-num">{{miaosha_end_time_over.m}}</text>
+                        <text class="timer-split">:</text>
+                        <text class="timer-num">{{miaosha_end_time_over.s}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="goods-info" style="background: #fff;padding:32rpx 24rpx;border-bottom: 1rpx solid #eee ">
+            <view style="font-weight: bold;margin-bottom: 24rpx;line-height: 1.7">{{goods.name}}</view>
+
+            <block a:if="{{quick == 1}}">
+                <view class="goodsInfo">
+                    <view style="float:left;">
+                        <text class="goods_price">￥ {{goods.price}}</text>
+                        <text class="original_price">原价: <text style="text-decoration:line-through">{{goods.original_price}}</text></text>
+                        <view style="font-size: 13px;color:#707070;margin-top:14rpx;margin-left:5rpx;">已售{{goods.sales_volume}} {{goods.unit}}</view>
+                    </view>
+                    <block a:if="{{goods.use_attr == 1}}">
+                        <view class="xuanguige" style="width: 142rpx;height: 50rpx;" onTap='showDialogBtn'>
+                            选规格<view a:if="{{goodNumCount > 0}}" class="guigenum">{{goodNumCount}}</view>
+                        </view>
+                    </block>
+                    <block a:else>
+                        <block a:if="{{goods_num > 0}}">
+                            <view class="btn-car_num">
+                                <image class="carStandard" src="{{__wxapp_img.store.jian.url}}" onTap="jian" ></image>
+                                <text class="carStandard">{{goods_num}}</text>
+                                <image class="carStandard" src="{{__wxapp_img.store.jia.url}}" onTap="jia"></image>
+                            </view>
+                        </block>
+                        <block a:else>
+                            <view class="xuanguige" onTap="jia">加入购物车</view>
+                        </block>
+                    </block> 
+                </view>
+            </block> 
+
+            <block a:else>
+                <view class="flex-row flex-y-center">
+                    <view class="flex-grow-1 flex-col">
+                        <block a:if="{{goods && goods.miaosha}}">
+                            <view class="flex-grow-0" style="color: #ff4544;margin-right: 32rpx">
+                                <text style="font-size: 9pt;">￥</text>
+                                <text style="font-size: 18pt">{{goods.miaosha.miaosha_price}}</text>
+                            </view>
+                        </block>
+                        <block a:else>
+                            <view class="flex-grow-0 flex-y-center" style="color: #ff4544;margin-right: 32rpx">
+                                <text style="font-size: 9pt;padding-top:18rpx">￥</text>
+                                <text style="font-size: 18pt">{{goods.min_price}}</text>
+                                <text a:if="{{goods.max_price>goods.min_price}}" style="width:14rpx;height:4rpx;background:#ff5c5c"></text>
+                                <text a:if="{{goods.max_price>goods.min_price}}" style="font-size: 18pt">{{goods.max_price}}</text>
+                            </view>
+
+                        </block>
+                        
+                        <view class="flex-row flex-y-center">
+
+                        <view  a:if="{{!goods || !goods.miaosha}}" class="flex-grow-0" style="margin-right: 32rpx">
+                            <text style="font-size: 9pt;color: #888;text-decoration: line-through">￥{{goods.original_price}}</text>
+                        </view>
+
+                        <view class="flex-grow-0" style="margin-right: 32rpx">
+                            <text style="font-size: 9pt;color: #888;">销量：{{goods.sales_volume}} {{goods.unit}}</text>
+                        </view>
+
+                        </view>
+                    </view>
+                    
+                        <view class="flex-grow-0">
+                            <button onTap="showShareModal" class="share-btn" plain="true">
+                                <image style="width: 40rpx;height: 40rpx" src="{{__wxapp_img.share.share.url}}" />
+                                <view style="color: #888">分享</view>
+                            </button>
+                        </view>
+                </view>
+            </block>
+        </view>
+        <view a:if="{{goods.service_list&&goods.service_list.length>0}}" class="bg-white mb-20 flex-row check-list">
+            <view class="check-item flex-y-center" a:for="{{goods.service_list}}" a:key="{{item.id}}">
+                <image src="{{__wxapp_img.store.check.url}}"></image>
+                <text>{{item}}</text>
+            </view>
+        </view>
+        <view a:else class="mb-20"></view>
+
+        <block a:if="{{quick != 1}}">
+            <view onTap="showAttrPicker" class="flex-row flex-y-center" style="background: #fff;padding:0 24rpx;margin-bottom: 20rpx;height: 100rpx;">
+                <view class="flex-grow-1 flex-row flex-y-center">
+                    <text>选择</text>
+                    <text style="margin-left: 40rpx;font-size: 9pt;color: #888888">规格</text>
+                </view>
+                <view class="flex-grow-0">
+                    <image style="width: 16rpx;height: 26rpx" src="{{__wxapp_img.store.jiantou_r.url}}" />
+                </view>
+            </view>
+        </block>
+        <view a:if="{{goods.mch}}" class="flex flex-row" style="background: #fff;margin-bottom: 20rpx;padding: 24rpx;">
+            <view class="flex-grow-0" style="padding-right: 24rpx">
+                <image src="{{goods.mch.logo}}" style="width: 80rpx;height: 80rpx;border: 1rpx solid #eee "></image>
+            </view>
+            <view class="flex-grow-1">
+                <view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis">{{goods.mch.name}}</view>
+                <view style="font-size: 9pt;color: #888">
+                    <text style="margin-right: 30rpx">商品数量：{{goods.mch.goods_num}}</text>
+                    <text>已售：{{goods.mch.sale_num}}</text>
+                </view>
+            </view>
+            <view class="flex-grow-0 flex-y-center">
+                <navigator style="border: 1rpx solid #e3e3e3;border-radius: 8rpx;padding:10rpx 20rpx;font-size:9pt;color#888;display: inline-block" url="/mch/shop/shop?mch_id={{goods.mch.id}}" open-type="redirect">进店逛逛</navigator>
+            </view>
+        </view>
+
+        <view class="tab-group">
+            <view class="flex-row tab-group-header">
+                <view onTap="tabSwitch" data-tab="detail" class="flex-grow-1 flex-x-center tab-group-item {{tab_detail}}">
+                    <text class="flex-y-center">商品详情</text>
+                </view>
+                <view onTap="tabSwitch" data-tab="comment" class="flex-grow-1 flex-x-center tab-group-item {{tab_comment}}">
+                    <text class="flex-y-center">评价</text>
+                </view>
+            </view>
+            <view class="tab-group-body">
+                <view class="tab-group-item {{tab_detail}}">
+                    <view class="goods-detail">
+                        <import src="../../wxParse/wxParse.axml" />
+                        <template is="wxParse" data="{{wxParseData:detail.nodes}}" />
+                    </view>
+                </view>
+                <view class="tab-group-item {{tab_comment}}">
+                    <view class="comment-count flex-row">
+                        <view class="comment-count-item flex-grow-1 flex-x-center flex-col">
+                            <view>全部</view>
+                            <view>({{comment_count.score_all>999?'999+':comment_count.score_all}})</view>
+                        </view>
+                        <view class="comment-count-item flex-grow-1 flex-x-center flex-col">
+                            <view>好评</view>
+                            <view>({{comment_count.score_3>999?'999+':comment_count.score_3}})</view>
+                        </view>
+                        <view class="comment-count-item flex-grow-1 flex-x-center flex-col">
+                            <view>中评</view>
+                            <view>({{comment_count.score_2>999?'999+':comment_count.score_2}})</view>
+                        </view>
+                        <view class="comment-count-item flex-grow-1 flex-x-center flex-col">
+                            <view>差评</view>
+                            <view>({{comment_count.score_1>999?'999+':comment_count.score_1}})</view>
+                        </view>
+                    </view>
+                    <view class="comment-list">
+                        <view class="comment-item flex-row" a:for="{{comment_list}}" a:key="{{item.id}}">
+                            <view class="flex-grow-0" style="overflow: visible">
+                                <image src="{{item.avatar_url}}" style="width: 70rpx;height: 70rpx;border-radius: 1000rpx" mode="aspectFill"></image>
+                            </view>
+                            <view class="flex-grow-1">
+                                <view class="flex-row mb-20">
+                                    <view class="flex-grow-1 flex-y-center nickname">{{item.nickname}}</view>
+                                    <view class="flex-grow-0 flex-y-center addtime">{{item.addtime}}</view>
+                                </view>
+                                <view class="mb-20">{{item.content}}</view>
+                                <view class="pic-list" a:if="{{item.pic_list&&item.pic_list.length>0}}">
+                                    <image onTap="commentPicView" a:for="{{item.pic_list}}" a:for-index="pic_index" a:key="{{item.id}}" data-index="{{index}}" data-pic-index="{{pic_index}}" src="{{item}}" mode="aspectFill" class="pic-item"></image>
+                                </view>
+                                <view a:if="{{item.reply_content}}" class="reply">商家: <view class="reply-content">{{item.reply_content}}</view></view>
+                            </view>
+                        </view>
+                    </view>
+
+
+                </view>
+            </view>
+        </view>
+ 
+    <view a:if="{{goods_list!=undefault && goods_list!=''&& tab_detail=='active'}}" style="background:#f7f7f7;padding-top:35rpx">
+        <view class="recommend">
+            <view class="recommend-left"></view>
+            <image class="recommend-pic" src="{{__wxapp_img.store.good_recommend.url}}"></image>
+            <text class="recommend-text">相关推荐</text>
+            <view class="recommend-right"></view>
+        </view>
+
+        <view style="padding-top:32rpx">
+            <view  class="goods-list"> 
+                <navigator url="/pages/goods/goods?id={{item.id}}" open-type="navigate" a:for="{{goods_list}}" a:key="{{item.id}}" class="goods-item {{index%2? 'pic-right':'pic-left'}}" style='font-size:11pt;'>
+                    <image class="goods-pic" src="{{item.pic_url}}" mode="aspectFill" />
+                    <view class="goods-info" style='padding:5rpx 20rpx;'>
+                        <text class="mb-10 text-more-2" style='height:2.8em;line-height:1.4;'>{{item.name}}</text>
+                        <view class='flex-row'>
+                            <view class='flex-grow-1' style='color:#ff334b'>￥{{item.price}}</view>
+                            <view class='flex-grow-0 fs-sm' style='color:#999;'>已售{{item.sales}}</view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+
+            <view class="loading-more {{is_loading?'active':''}}">
+                <image src="{{__wxapp_img.system.loading.url}}"></image>
+            </view>
+        </view>
+    </view>
+
+    </view>
+
+    <block a:if="{{quick == 1}}">
+        <!--购物车开始  -->
+        <include src="/commons/goods/goods_car" />
+        <!--购物车结束  -->
+        <include src="/commons/goods/goods_car_list" />
+    </block>
+    <block a:else>
+        <navigator url="/pages/cart/cart" class="cart-nav" open-type="redirect">
+            <image src="{{__wxapp_img.nav.cart.url}}"></image>
+        </navigator>
+        <view class="flex-row bar-bottom">
+            <view class="flex-grow-0 flex-row">
+                <button a:if="{{store.show_customer_service==1 && false}}" class="flex-grow-0 flex-y-center bar-bottom-btn" open-type="contact" plain="true">
+                    <view>
+                        <image src="{{__wxapp_img.user.kf.url}}"></image>
+                        <text>客服</text>
+                    </view>
+                </button>
+
+            <navigator a:if="{{goods.mch}}" class="flex-grow-0 flex-y-center bar-bottom-btn" url="/mch/shop/shop?mch_id={{goods.mch.id}}" open-type="redirect">
+                <view>
+                    <image src="{{__wxapp_img.store.store.url}}"></image>
+                    <text>店铺</text>
+                </view>
+            </navigator>
+            <navigator a:else class="flex-grow-0 flex-y-center bar-bottom-btn" url="/pages/index/index" open-type="redirect">
+                <view>
+                    <image src="{{__wxapp_img.store.store.url}}"></image>
+                    <text>首页</text>
+                </view>
+            </navigator>
+
+                <view a:if="{{goods.is_favorite && goods.is_favorite==1}}" onTap="favoriteRemove" class="flex-grow-0 flex-y-center bar-bottom-btn">
+                    <view>
+                        <image src="{{__wxapp_img.store.favorite_active.url}}"></image>
+                        <text>已收藏</text>
+                    </view>
+                </view>
+                <view a:else onTap="favoriteAdd" class="flex-grow-0 flex-y-center bar-bottom-btn">
+                    <view>
+                        <image src="{{__wxapp_img.store.favorite.url}}"></image>
+                        <text>收藏</text>
+                    </view>
+                </view>
+
+            </view>
+            <view class="flex-grow-1 flex-row">
+                <view class="flex-grow-1 flex-y-center flex-x-center add-cart" onTap="addCart">加入购物车</view>
+                <view class="flex-grow-1 flex-y-center flex-x-center buy-now" onTap="buyNow">立即购买</view>
+            </view>
+        </view>
+    </block>
+
+    <include src="/commons/get-coupon/get-coupon.axml" />
+    <include src="/commons/float-icon/float-icon.axml" />
+</view>
+
+<view class='modal flex-row {{hide}}' onTap='close'>
+    <view class='flex-y-center' style='width:100%;height:100%;position:relative;'>
+    <image src='{{__wxapp_img.store.close2.url}}' style='width:50rpx;height:50rpx;position:absolute;left:24rpx;top:24rpx'></image>
+        <video direction='' src='{{url}}' id="video" style='height:80%' autoplay="true"></video>
+    </view>
+</view>
+
+<view class="share-modal {{share_modal_active}}">
+    <view class="share-modal-body">
+        <view class="flex-row">
+            <view class="flex-grow-1 flex-x-center">
+                <button open-type="share" class="share-bottom" style='height:100%; s'>
+                    <image src="{{__wxapp_img.share.friend.url}}"></image>
+                    <view>分享给朋友</view>
+                </button>
+            </view>
+            <view class="flex-grow-1 flex-x-center">
+                <view onTap="getGoodsQrcode" class="share-bottom">
+                    <image src="{{__wxapp_img.share.qrcode.url}}"></image>
+                    <view>生成商品海报</view>
+                </view>
+            </view>
+        </view>
+        <view onTap="shareModalClose" class="share-modal-close flex-y-center flex-x-center">关闭</view>
+    </view>
+</view>
+
+<view class="goods-qrcode-modal {{goods_qrcode_active}}">
+    <view class="goods-qrcode-body flex-col">
+        <view class="flex-grow-1" style="position: relative">
+            <view style="position: absolute;left: 0;top:0;width: 100%;height: 100%;padding: 100rpx 100rpx 60rpx">
+                <view class="goods-qrcode-box">
+                    <view class="goods-qrcode-loading flex-x-center flex-y-center">
+                        <view class="flex-x-center flex-col">
+                            <image style="width: 150rpx;height: 150rpx" src="{{__wxapp_img.system.loading2.url}}"></image>
+                            <view style="color: #888">海报生成中</view>
+                        </view>
+                    </view>
+                    <image onTap="goodsQrcodeClick" mode="aspectFill" class="goods-qrcode {{goods_qrcode?'active':''}}" data-src="{{goods_qrcode}}" src="{{goods_qrcode}}"></image>
+                </view>
+            </view>
+        </view>
+        <view class="flex-grow-0 flex-col flex-x-center" style="padding: 0 60rpx 80rpx">
+            <view style="margin-bottom: 20rpx;padding: 0 40rpx">
+                <button a:if="{{goods_qrcode}}" onTap="saveGoodsQrcode" style="background: #ff4544;color: #fff;">
+                    保存图片
+                </button>
+                <button a:else style="opacity: .4">保存图片</button>
+            </view>
+            <view style="color: #888;font-size: 9pt;text-align: center">保存至相册</view>
+        </view>
+        <view class="goods-qrcode-close" onTap="goodsQrcodeClose">
+            <image src="{{__wxapp_img.store.close2.url}}" style="width: 50rpx;height: 50rpx;display: block"></image>
+        </view>
+    </view></view>
+<include src="/commons/goods/specifications" />

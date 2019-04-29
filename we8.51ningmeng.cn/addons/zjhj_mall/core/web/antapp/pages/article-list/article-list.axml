@@ -1,0 +1,12 @@
+<!--pages/article-list/article-list.wxml-->
+<view class="article-list">
+    <navigator class="flex-row article-item" a:for="{{article_list}}"
+               url="/pages/article-detail/article-detail?id={{item.id}}">
+        <view class="flex-grow-1 flex-y-center title">
+            {{item.title}}
+        </view>
+        <view class="flex-grow-0 flex-y-center">
+            <image class="pointer" src="{{__wxapp_img.store.jiantou_r.url}}"></image>
+        </view>
+    </navigator>
+</view>

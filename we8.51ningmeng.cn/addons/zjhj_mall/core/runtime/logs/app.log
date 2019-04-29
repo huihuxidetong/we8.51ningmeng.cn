@@ -1,0 +1,26 @@
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Cannot use object of type stdClass as array' in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Cannot use object of type stdClass as array' in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:54
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'rsort() expects parameter 1 to be array, null given' in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\update\index.php:76
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'rsort() expects...', 'D:\\WWW\\hejiang\\...', 76, Array)
+#1 D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\update\index.php(76): rsort('<span class="ke...')
+#2 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\base\View.php(330): require('D:\\WWW\\hejiang\\...')
+#3 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\hejiang\\...', Array)
+#4 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\hejiang\\...', Array, Object(app\modules\mch\controllers\UpdateController))
+#5 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\modules\mch\controllers\UpdateController))
+#6 D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php(67): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\modules\mch\controllers\UpdateController->actionIndex()
+#8 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#11 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('mch/update/inde...', Array)
+#12 D:\WWW\hejiang\addons\zjhj_mall\core\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php(7): yii\base\Application->run()
+#14 D:\WWW\hejiang\addons\zjhj_mall\core\web\debug.php(10): require('D:\\WWW\\hejiang\\...')
+#15 {main}

@@ -1,0 +1,644 @@
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:36:27 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:37:17 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:38:23 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:38:23 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:38:23 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:38:23 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:38:23 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:38:23 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:38:23 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:38:23 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:38:23 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:38:23 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:38:24 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:38:24 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:39:42 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:39:42 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:39:42 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:37 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:37 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:37 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:40:43 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\update\error.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:60
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:60
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\components/pick-link.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php:73
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:60
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:40:43 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\components/pick-file.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php:74
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:60
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:14 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:14 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/get-data/order'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/get-data/order
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:14 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\GetDataController::actionOrder()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:41:44 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:44 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/get-data/order'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/get-data/order
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:41:44 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\GetDataController::actionOrder()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:04 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:04 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:04 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:05 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\update\error.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:60
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:05 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:60
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:05 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\components/pick-link.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php:73
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:60
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:05 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\components/pick-file.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php:74
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:60
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:42:33 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\update\error.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:45
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:45
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\components/pick-link.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php:73
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:45
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:42:33 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\components/pick-file.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php:74
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:45
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:00 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:00 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:00 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:16 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:16 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:16 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:43:43 [::1][1][lecduaodgc8la6oc1ogod4f9a2][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\update\index.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:67
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:10 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:10 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:10 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:11 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\update\index.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:49
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:11 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:49
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:11 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\components/pick-link.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php:73
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:49
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:11 [::1][1][-][trace][yii\base\View::renderFile] Rendering view file: D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\components/pick-file.php
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\views\layouts\main.php:74
+    in D:\WWW\hejiang\addons\zjhj_mall\core\modules\mch\controllers\UpdateController.php:49
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:41 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:41 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/get-data/order'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/get-data/order
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:41 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\GetDataController::actionOrder()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:45:47 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:47 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:45:47 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 20:46:20 [::1][1][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:46:20 [::1][1][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\Controller::runAction] Route to run: mch/update/index
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 20:46:20 [::1][1][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\UpdateController::actionIndex()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 21:12:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:40 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:40 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:40 [::1][-][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 21:12:40 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/update/index'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 21:12:40 [::1][-][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with app\hejiang\Sentry
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\gii\Module::bootstrap()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+    in D:\WWW\hejiang\addons\zjhj_mall\core\hejiang\Application.php:22
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:6
+2018-06-14 21:12:41 [::1][-][-][trace][yii\web\UrlManager::parseRequest] Pretty URL not enabled. Using default URL parsing logic.
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 21:12:41 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'mch/passport/login'
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Module::getModule] Loading module: mch
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: mch/passport/login
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7
+2018-06-14 21:12:41 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: app\modules\mch\controllers\PassportController::actionLogin()
+    in D:\WWW\hejiang\addons\zjhj_mall\core\web\index.php:7

@@ -1,0 +1,7 @@
+<!--pages/integral-mall/shuoming/index.wxml-->
+<block a:for="{{integral_shuoming}}" a:for-item="title">
+    <view style="padding:36rpx 24rpx 0rpx 24rpx;">
+        <view class="title">{{title.title}}</view>
+        <text style="color:#353535;">{{title.content}}</text>
+    </view>
+</block>
